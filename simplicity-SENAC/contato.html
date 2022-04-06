@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatos - Simplicity</title>
+    <!-- usar dica: referenciar o link,clicar nele dará um erro e em seguida vai sugerir criar a pasta. -->
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+
+<body>
+    <header>
+        <div class="limitador">
+            <h1><a href="index.html">Simplicity</a></h1>
+            <nav>
+            <!-- comportamento deste link será feito com javascript -->
+                <h2><a href="#">Menu &equiv;</a></h2>
+                <!-- código que rendeliza o sina de equivalente  -->
+            
+                <ul class="links-menu">         
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <article class="conteudo limitador">
+                <h2>Contato</h2>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero dolorum, maxime et consequatur architecto perspiciatis impedit ullam. Facilis sapiente magni accusantium consectetur qui omnis, consequatur autem iusto sunt tenetur id!</p>
+            
+                <p>Incidunt illum, voluptatem reprehenderit quibusdam minus temporibus rem fugiat odit earum ipsum ratione excepturi quasi fugit suscipit libero, recusandae repellat culpa. Aspernatur natus omnis ad aperiam magnam suscipit, praesentium quasi.</p>
+
+                <form action="" method="post">
+
+                    <div>
+                        <label for="">Nome:</label>
+                        <input placeholder="Escreva seu nome completo"  type="text" name="nome" id="nome">
+                    </div>
+
+                    <div>
+                        <label for="">E-mail:</label>
+                        <input placeholder="Escreva seu email"  type="text" name="email" id="email">
+                    </div>
+
+                    <div>
+                        <label for="">Data de Nascimento:</label>
+                        <input placeholder="Escreva sua data de nascimento"  type="date" name="data" id="data">
+                    </div>
+
+                    <div>
+                        <label for="">Telefone:</label>
+                        <input placeholder="(55 + 00 0000-0000)"  type="tel" name="telefone" id="telefone">
+                    </div>
+
+                    <div>
+                        <label for="">Idade:</label>
+                        <input placeholder=""  type="number" name="idade" id="idade" min="18" max="110">
+                    </div>
+
+                    <div>
+                        <!-- tag radio representa uma seleção única -->
+                        <p>
+                            <input type="radio" name="sexo" id="mas">
+                            <label for="masculino">Masculino</label>
+
+                            <input type="radio" name="sexo" id="mas">
+                            <label for="feminino">Feminino</label>
+                        </p>
+                    </div>
+
+                    <div>
+                        <!-- tag radio representa uma multipla seleção
+                        é possível habilitar uma caixa fixa e disable (pesquisar sobre)
+                        -->
+
+                        <!-- o atributo "required" coloca que seja completado a informação como obrigatório -->
+                        <p>
+                            <input type="checkbox" name="interesses" id="design" required>
+                            <label for="">Design</label>
+
+                            <input type="checkbox" name="interesses" id="marketing" required>
+                            <label for="">Marketing</label>
+
+                            <input type="checkbox" name="interesses" id="programacao">
+                            <label for="">Programação</label>
+                        </p>
+                    </div>
+                    <!-- campo obrigatório verificar -->
+                    <div>
+                        <label for="assunto">Assunto</label>
+                        <select name="" id="">
+                            <option></option>  <!--deixe uma vazia de propósito-->
+                            <option>Dúvidas</option>
+                            <option>Elogios</option>
+                            <option>Reclamações</option>
+                            <option>Outros</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="mensagem">Mensagens:</label><br>                       
+                        <textarea name="mensagem" id="mensagem" cols="20" rows="8"></textarea>
+                    </div>
+
+                    <button type="submit">Enviar dados</button>
+                    <!-- Pode ser assim também -->               
+                    <!-- <input type="button" value="Enviar dados"> -->
+                </form>
+        </article>   
+    </main>
+    <footer>
+        <p>Simplicity é um site fictício desenvolvido educacionalmente nas aulas de Programação WEB
+            <br>com orientação do Professor Thiago Santos
+            <br>Senac Penha - 2022</p>
+    </footer>
+</body>
+
+</html>
