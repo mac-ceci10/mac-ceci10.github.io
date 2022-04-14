@@ -70,6 +70,9 @@ header {
     background-color: rgb(241, 241, 207);
     position: sticky; /*este recurso é muito utilizado para deixar o cabeçalho fixo*/
     top: 0;
+
+    z-index: 1000;
+    /* z-index, sempre que usar a propriedade position, poderá usar controla a profundidade. Ajustes de profundidade. Quanto maior, mais à frente fica
     /* justify-content:space-between; */
     /* align-items: center; */
     /* max-width: 1200px; */
@@ -128,6 +131,7 @@ nav h2 a:focus,
 
 
 /* display flex habilita justify-content: center e align-items: center */
+
 .links-menu a {
     color: black;
     font-weight: bold;
@@ -136,6 +140,7 @@ nav h2 a:focus,
     height: 50px;
     justify-content: center;
     align-items: center;
+    background-color: whitesmoke;
 }
 
 
