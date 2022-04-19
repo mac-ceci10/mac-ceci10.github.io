@@ -14,4 +14,5 @@ botao.addEventListener("click", function(event){
    } else {
         icone.innerHTML = "Menu &equiv;";
    }
+   
 });
