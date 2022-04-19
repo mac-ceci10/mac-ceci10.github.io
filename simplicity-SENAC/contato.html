@@ -139,8 +139,10 @@
                     </div>
 
                     <div>
-                        <label for="mensagem">Mensagens:</label><br>                       
-                        <textarea name="mensagem" id="mensagem" cols="20" rows="8"></textarea>
+                        <label for="mensagem">Mensagem: 
+                            <span id="maximo"> (restam <b id="caracteres">1000</b> caracteres)</span>
+                        </label> <br>                    
+                        <textarea maxlength="1000" name="mensagem" id="mensagem" cols="20" rows="8"></textarea>
                     </div>
 
                     <button type="submit">Enviar dados</button>

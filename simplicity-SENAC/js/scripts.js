@@ -55,8 +55,47 @@ botaoLocalizar.addEventListener("click", function(event){
 });
 
 VMasker(inputCep).maskPattern("99999-999");
-VMasker(inputTelefone).maskPattern("(99) 9999-9999");
-VMasker(inputTelefone).maskPattern("(99) 99999-9999");
+VMasker(inputTelefone).maskPattern("(99)9999-9999");
+VMasker(inputTelefone).maskPattern("(99)99999-9999");
+
+
+
+//Programação do contador de caracteres do campo mensagem
+
+const spanMaximo = formulario.querySelector("#maximo");
+const bCaracteres = formulario.querySelector("#caracteres");
+const textMensagem = formulario.querySelector("#mensagem");
+
+//Determinar a quantidade máxima de caracteres do campo mensagem;
+//digitação é um evento que o javaScript manipula
+
+let quantidade = 1000;
+
+//evento que é monitorado em tempo real, para detectar a digitação de um campo
+textMensagem.addEventListener("input", function(){
+
+    //capturando o que for digitado
+    console.log(textMensagem.value);
+    let conteudo = textMensagem.value;
+
+    //criando uma contagem regressiva
+    let contagem = quantidade - conteudo.length;
+
+    //adiciona a contagem ao elemento HTML
+    bCaracteres.textContent = contagem;
+    // console.log(contagem);
+
+    
+    if (contagem == 0) {
+        bCaracteres.style.color = "red";
+        textMensagem.style.boxShadow = "red 0 0 10px";
+    } else {
+        bCaracteres.style.color = "black";
+        textMensagem.style.boxShadow = "black 0 0 10px";
+    }
+});
+
+
 
 /* Lib VanillaMasker:
  
